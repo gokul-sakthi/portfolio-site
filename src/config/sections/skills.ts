@@ -1,0 +1,92 @@
+import type { SkillsConfig } from "../types"
+
+export const skills: SkillsConfig = {
+  isVisible: true,
+  groups: [
+    {
+      id: "backend",
+      isVisible: true,
+      label: "Backend",
+      icon: "⬡",
+      skills: [
+        { isVisible: true, name: "Node.js" },
+        { isVisible: true, name: "Nest.js" },
+        { isVisible: true, name: "Express" },
+        { isVisible: true, name: "Prisma" },
+        { isVisible: true, name: "PostgreSQL" },
+        { isVisible: true, name: "Redis" },
+      ],
+    },
+    {
+      id: "frontend",
+      isVisible: true,
+      label: "Frontend",
+      icon: "◈",
+      skills: [
+        { isVisible: true, name: "React" },
+        { isVisible: true, name: "TypeScript" },
+        { isVisible: true, name: "Zustand / Jotai" },
+        { isVisible: true, name: "ShadCN UI" },
+        { isVisible: true, name: "Next.js" },
+      ],
+    },
+    {
+      id: "architecture",
+      isVisible: true,
+      label: "Architecture",
+      icon: "◉",
+      skills: [
+        { isVisible: true, name: "Real-time Systems" },
+        { isVisible: true, name: "Event-driven Workflows" },
+        { isVisible: true, name: "Modular Monoliths" },
+        { isVisible: true, name: "REST / tRPC / gRPC" },
+      ],
+    },
+    {
+      id: "devops",
+      isVisible: true,
+      label: "Tools & DevOps",
+      icon: "⬗",
+      skills: [
+        { isVisible: true, name: "Docker" },
+        { isVisible: true, name: "Swagger / OpenAPI" },
+        { isVisible: true, name: "Git" },
+        { isVisible: true, name: "Postman" },
+        { isVisible: true, name: "PM2" },
+        { isVisible: true, name: "Electron" },
+      ],
+    },
+    {
+      id: "cloud",
+      isVisible: true,
+      label: "Cloud & Observability",
+      icon: "◎",
+      skills: [
+        { isVisible: true, name: "EC2" },
+        { isVisible: true, name: "ECS" },
+        { isVisible: true, name: "S3" },
+        { isVisible: true, name: "CloudFront" },
+        { isVisible: true, name: "RDS" },
+        { isVisible: true, name: "CloudWatch" },
+        { isVisible: true, name: "Jaeger" },
+        { isVisible: true, name: "Prometheus" },
+        { isVisible: true, name: "Grafana" },
+      ],
+    },
+    {
+      id: "also-used",
+      isVisible: true,
+      label: "Also Used",
+      icon: "⬡",
+      skills: [
+        { isVisible: true, name: "WebRTC" },
+        { isVisible: true, name: "WebSockets" },
+        { isVisible: true, name: "Bull" },
+        { isVisible: true, name: "Zod" },
+        { isVisible: true, name: "NATS.io" },
+        { isVisible: true, name: "React Query" },
+        { isVisible: true, name: "SIP" },
+      ],
+    },
+  ],
+}

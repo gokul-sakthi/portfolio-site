@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Light theme (default) ──────────────────────────────────────── */
+:root,
+[data-theme="light"] {
+  --bg:              #f7f6f3;
+  --bg-surface:      #ffffff;
+  --bg-subtle:       #f0efe9;
+  --bg-muted:        #e8e6de;
+
+  --fg:              #1a1916;
+  --fg-muted:        #5c5a53;
+  --fg-subtle:       #8a8880;
+  --fg-placeholder:  #b0ada5;
+
+  --border:          #dedad2;
+  --border-strong:   #c8c4bc;
+
+  --accent:          #1a6cf0;
+  --accent-hover:    #1558d0;
+  --accent-subtle:   #e8f0fe;
+  --accent-text:     #1a6cf0;
+
+  --shadow-sm:       0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md:       0 4px 12px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+  --shadow-lg:       0 12px 32px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.05);
+  --shadow-accent:   0 4px 20px rgba(26,108,240,0.2);
+
+  --radius:          10px;
+
+  /* ShadCN compat */
+  --background:      249 246 240;
+  --foreground:      26 25 22;
+  --card:            255 255 255;
+  --card-foreground: 26 25 22;
+  --border-css:      216 212 202;
+  --muted:           240 238 233;
+  --muted-foreground: 92 90 83;
+  --primary:         215 89% 52%;
+  --primary-foreground: 0 0% 100%;
+}
+
+/* ── Dark theme ─────────────────────────────────────────────────── */
+[data-theme="dark"] {
+  --bg:              #0e0f12;
+  --bg-surface:      #13151a;
+  --bg-subtle:       #1a1d24;
+  --bg-muted:        #21252f;
+
+  --fg:              #e8e6e0;
+  --fg-muted:        #8f8d86;
+  --fg-subtle:       #5e5d58;
+  --fg-placeholder:  #3e3d38;
+
+  --border:          #252830;
+  --border-strong:   #303440;
+
+  --accent:          #4d8ef7;
+  --accent-hover:    #6ba0f9;
+  --accent-subtle:   rgba(77,142,247,0.1);
+  --accent-text:     #6ba0f9;
+
+  --shadow-sm:       0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md:       0 4px 12px rgba(0,0,0,0.35);
+  --shadow-lg:       0 12px 32px rgba(0,0,0,0.5);
+  --shadow-accent:   0 4px 20px rgba(77,142,247,0.25);
+}
+
+/* ── Base ────────────────────────────────────────────────────────── */
+@layer base {
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  ::selection {
+    background: var(--accent-subtle);
+    color: var(--accent-text);
+  }
+
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--fg-subtle); }
+}
+
+/* ── Utilities ──────────────────────────────────────────────────── */
+@layer utilities {
+  .font-display    { font-family: 'Outfit', sans-serif; }
+  .font-mono-code  { font-family: 'JetBrains Mono', monospace; }
+
+  /* Section fade-in on scroll */
+  .section-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .section-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Subtle dot grid */
+  .dot-grid {
+    background-image: radial-gradient(circle, var(--border) 1px, transparent 1px);
+    background-size: 28px 28px;
+  }
+
+  /* Card transitions */
+  .card-lift {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  }
+  .card-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--border-strong);
+  }
+
+  /* Accent glow on accent-colored elements */
+  .accent-glow {
+    box-shadow: var(--shadow-accent);
+  }
+
+  /* Section number label */
+  .section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--accent-text);
+  }
+
+  /* Inline code style */
+  .inline-code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82em;
+    background: var(--accent-subtle);
+    color: var(--accent-text);
+    padding: 1px 6px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+  }
+}
