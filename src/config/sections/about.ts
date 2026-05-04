@@ -4,50 +4,50 @@ export const about: AboutConfig = {
   isVisible: true,
 
   summary:
-    "Backend-focused engineer who builds things that run in production — real-time systems, payment flows, cloud infrastructure, and the tooling teams rely on daily.",
+    "Backend engineer with 3+ years shipping production systems — modular monolith APIs, real-time communication layers, payment integrations, and Electron desktop apps deployed in the field.",
 
   highlights: [
     {
       id: "backend",
       isVisible: true,
       icon: "⬡",
-      title: "Backend & APIs",
-      description: "Node.js, NestJS, Express, Prisma, PostgreSQL, Redis — from modular REST APIs to type-safe tRPC services.",
+      title: "Backend & API Design",
+      description: "Node.js, NestJS, Express with Prisma ORM and PostgreSQL. Designed maintainable schemas, efficient query patterns, and modular service structures for production workloads.",
+    },
+    {
+      id: "database",
+      isVisible: true,
+      icon: "◉",
+      title: "Database Engineering",
+      description: "PostgreSQL as primary data store across every product — schema design, Prisma migrations, index strategy, and query optimisation under concurrent production traffic.",
     },
     {
       id: "realtime",
       isVisible: true,
       icon: "⚡",
-      title: "Real-time Systems",
-      description: "WebSockets, WebRTC signaling, SIP audio, Bull queues — built and maintained live communication platforms.",
+      title: "Real-time & Queues",
+      description: "WebRTC signaling with STUN/TURN coordination, WebSockets for live state sync, and BullJS job queues for background processing and async workflows.",
     },
     {
-      id: "cloud",
+      id: "desktop",
       isVisible: true,
-      icon: "☁",
-      title: "Cloud & DevOps",
-      description: "AWS deployments (ECS/EC2/RDS), Docker, CloudFront, CloudWatch — owned environments end-to-end.",
+      icon: "◈",
+      title: "Desktop & Kiosk Apps",
+      description: "Electron apps for Windows — kiosk state machine UX, auto-update flows, OS keychain credential storage, and OpenAPI-driven backend integration.",
     },
     {
       id: "integrations",
       isVisible: true,
       icon: "⇄",
       title: "Payments & Integrations",
-      description: "Razorpay and Stripe workflows, gRPC pipelines, third-party API integration in production systems.",
-    },
-    {
-      id: "observability",
-      isVisible: true,
-      icon: "◎",
-      title: "Observability",
-      description: "Jaeger distributed tracing, Prometheus metrics, Grafana dashboards — diagnosed latency across microservices.",
+      description: "Razorpay and Stripe payment workflows end-to-end, including webhook verification and failure recovery. Third-party API integration in live production systems.",
     },
     {
       id: "ownership",
       isVisible: true,
-      icon: "◈",
-      title: "Ownership & Mentorship",
-      description: "Handled production incidents across backend, React, and Electron layers. Mentored junior developers.",
+      icon: "◎",
+      title: "Ownership & Delivery",
+      description: "Owned production incidents end-to-end across backend, React, and Electron layers. Mentored junior developers and drove code quality improvements across the team.",
     },
   ],
 
@@ -68,9 +68,9 @@ export const about: AboutConfig = {
   ],
 
   stats: [
-    { isVisible: true, value: "3+",   label: "Years Experience" },
-    { isVisible: true, value: "2",    label: "Production Products" },
-    { isVisible: true, value: "Full", label: "Stack Coverage" },
-    { isVisible: true, value: "AWS",  label: "Cloud Deployed" },
+    { isVisible: true, value: "3+",  label: "Years in Production" },
+    { isVisible: true, value: "3",   label: "Shipped Products" },
+    { isVisible: true, value: "BE+", label: "Backend Focus" },
+    { isVisible: true, value: "AWS", label: "Cloud Deployed" },
   ],
 }

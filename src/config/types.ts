@@ -40,6 +40,8 @@ export interface ProjectItem extends VisibilityNode {
   subtitle: string
   description: string
   icon: string
+  link?: string
+  images?: string[]
   highlights: BulletPoint[]
   tags: string[]
 }

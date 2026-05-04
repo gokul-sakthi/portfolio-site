@@ -3,87 +3,89 @@ import { cn } from "@/lib/utils"
 import { portfolioConfig } from "@/config/portfolio.config"
 import { GithubIcon, LinkedinIcon } from "@/components/ui/icons"
 
+function MapPinIcon() {
+  return (
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1116 0z" /><circle cx="12" cy="10" r="3" />
+    </svg>
+  )
+}
+
 export function Contact() {
   const { ref, revealed } = useReveal()
   const { contact, meta } = portfolioConfig
   if (!contact.isVisible) return null
 
   return (
-    <section id="contact" className="py-28 px-6" style={{ background: "var(--bg-subtle)" }}>
-      <div className="max-w-5xl mx-auto text-center">
-        <div ref={ref} className={cn("section-reveal", revealed && "revealed")}>
+    <section id="contact" className="px-6 py-0">
+      <div className="max-w-5xl mx-auto">
+        <div
+          ref={ref}
+          className={cn("section-reveal", revealed && "revealed")}
+        >
+          {/* Strip */}
+          <div
+            className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5 py-7 border-t border-b"
+            style={{ borderColor: "var(--border)" }}
+          >
+            {/* Left — availability */}
+            <div className="flex items-center gap-2.5">
+              <span className="relative flex h-2.5 w-2.5 flex-shrink-0">
+                <span
+                  className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-60"
+                  style={{ background: "#22c55e" }}
+                />
+                <span
+                  className="relative inline-flex rounded-full h-2.5 w-2.5"
+                  style={{ background: "#22c55e" }}
+                />
+              </span>
+              <span className="text-sm font-medium" style={{ color: "var(--fg)" }}>
+                Open to work
+              </span>
+              <span className="text-sm" style={{ color: "var(--fg-subtle)" }}>
+                — {contact.body.split('—')[1]?.trim() ?? "fulltime, contract, or a conversation"}
+              </span>
+            </div>
 
-          <div className="flex items-center gap-3 mb-12 justify-center">
-            <span className="section-label">06.</span>
-            <h2 className="font-display text-3xl md:text-4xl" style={{ color: "var(--fg)" }}>
-              {contact.heading}
-            </h2>
-          </div>
-
-          <div className="max-w-lg mx-auto">
+            {/* Centre — location */}
             <div
-              className="relative rounded-2xl border p-10 overflow-hidden"
-              style={{
-                background: "var(--bg-surface)",
-                borderColor: "var(--border)",
-                boxShadow: "var(--shadow-md)",
-              }}
+              className="flex items-center gap-1.5 text-sm sm:absolute sm:left-1/2 sm:-translate-x-1/2"
+              style={{ color: "var(--fg-subtle)" }}
             >
-              {/* Accent corner glow */}
-              <div
-                className="absolute -top-10 -right-10 w-36 h-36 rounded-full blur-2xl pointer-events-none"
-                style={{ background: "var(--accent-subtle)" }}
-              />
+              <MapPinIcon />
+              {meta.location}
+            </div>
 
-              <p
-                className="leading-relaxed mb-8 text-base relative z-10"
+            {/* Right — links */}
+            <div className="flex items-center gap-4">
+              <a
+                href={meta.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-medium transition-colors"
                 style={{ color: "var(--fg-muted)" }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "var(--accent-text)")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "var(--fg-muted)")}
               >
-                {contact.body}
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-3 justify-center relative z-10">
-                <a
-                  href={meta.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold transition-all accent-glow"
-                  style={{
-                    background: "var(--accent)",
-                    color: "#fff",
-                  }}
-                  onMouseEnter={(e) => (e.currentTarget.style.background = "var(--accent-hover)")}
-                  onMouseLeave={(e) => (e.currentTarget.style.background = "var(--accent)")}
-                >
-                  <LinkedinIcon size={16} />
-                  Connect on LinkedIn
-                </a>
-                <a
-                  href={meta.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold border transition-all"
-                  style={{
-                    background: "transparent",
-                    borderColor: "var(--border-strong)",
-                    color: "var(--fg)",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = "var(--accent)"
-                    e.currentTarget.style.color = "var(--accent-text)"
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = "var(--border-strong)"
-                    e.currentTarget.style.color = "var(--fg)"
-                  }}
-                >
-                  <GithubIcon size={16} />
-                  View GitHub
-                </a>
-              </div>
+                <LinkedinIcon size={15} />
+                LinkedIn
+              </a>
+              <span style={{ color: "var(--border-strong)" }}>·</span>
+              <a
+                href={meta.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-medium transition-colors"
+                style={{ color: "var(--fg-muted)" }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "var(--accent-text)")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "var(--fg-muted)")}
+              >
+                <GithubIcon size={15} />
+                GitHub
+              </a>
             </div>
           </div>
-
         </div>
       </div>
     </section>

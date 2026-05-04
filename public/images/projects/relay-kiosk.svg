@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <!-- Full screen kiosk — no browser chrome, no sidebar -->
+  <rect width="1200" height="750" fill="#080f1e"/>
+  <!-- Subtle dot-grid background pattern -->
+  <defs>
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="20" r="1" fill="#2d3e58" opacity=".4"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="750" fill="url(#grid)"/>
+
+  <!-- Status bar -->
+  <rect width="1200" height="36" fill="#0f172a" opacity=".9"/>
+  <circle cx="18" cy="18" r="5" fill="#4ade80"/>
+  <text x="30" y="22" fill="#4ade80" font-size="11" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">SYSTEM ONLINE</text>
+  <text x="1184" y="22" text-anchor="end" fill="#64748b" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Terminal RLY-0091  ·  Floor 1, North Wing</text>
+
+  <!-- Center card -->
+  <rect x="350" y="100" width="500" height="550" rx="16" fill="#1a2540" stroke="#818cf830" stroke-width="1"/>
+
+  <!-- Logo -->
+  <text x="600" y="172" text-anchor="middle" fill="#818cf8" font-size="32" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">◈  Relay</text>
+  <text x="600" y="200" text-anchor="middle" fill="#64748b" font-size="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">KIOSK TERMINAL</text>
+  <line x1="390" y1="220" x2="810" y2="220" stroke="#2d3e58" stroke-width="1"/>
+
+  <!-- State: Registration form -->
+  <text x="600" y="268" text-anchor="middle" fill="#f1f5f9" font-size="20" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Register This Terminal</text>
+  <text x="600" y="294" text-anchor="middle" fill="#64748b" font-size="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Enter details to connect to the admin system</text>
+
+  <!-- Device name field -->
+  <text x="392" y="334" fill="#64748b" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Device Name</text>
+  <rect x="392" y="342" width="416" height="40" rx="8" fill="#0f172a" stroke="#2d3e58" stroke-width="1"/>
+  <text x="408" y="367" fill="#94a3b8" font-size="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Terminal A — North Lobby</text>
+
+  <!-- Location field -->
+  <text x="392" y="404" fill="#64748b" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Physical Location</text>
+  <rect x="392" y="412" width="416" height="40" rx="8" fill="#0f172a" stroke="#2d3e58" stroke-width="1"/>
+  <text x="408" y="437" fill="#94a3b8" font-size="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Floor 1, North Wing</text>
+
+  <!-- Submit button -->
+  <rect x="392" y="474" width="416" height="44" rx="10" fill="#818cf8"/>
+  <text x="600" y="501" text-anchor="middle" fill="#fff" font-size="14" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Register Device</text>
+
+  <!-- Footer status -->
+  <text x="600" y="556" text-anchor="middle" fill="#64748b" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Secured with ECDSA P-256 · Key stored in OS keychain</text>
+
+  <!-- Bottom bar -->
+  <rect y="702" width="1200" height="48" fill="#0f172a" opacity=".9"/>
+  <text x="600" y="732" text-anchor="middle" fill="#64748b" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Relay Kiosk OS  v1.4.2  ·  Build 20250110</text>
+</svg>

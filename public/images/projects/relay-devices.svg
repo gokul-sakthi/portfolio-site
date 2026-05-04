@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  
+  <rect width="1200" height="750" fill="#0f172a"/>
+  <rect width="1200" height="44" fill="#1a2540"/>
+  <circle cx="22" cy="22" r="6" fill="#ef4444" opacity=".75"/>
+  <circle cx="40" cy="22" r="6" fill="#f59e0b" opacity=".75"/>
+  <circle cx="58" cy="22" r="6" fill="#22c55e" opacity=".75"/>
+  <rect x="80" y="9" width="200" height="26" rx="5" fill="#0f172a"/>
+  <text x="180" y="26" text-anchor="middle" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">relay-admin · Devices</text>
+  <rect x="310" y="11" width="440" height="22" rx="11" fill="#080f1e"/>
+  <text x="530" y="26" text-anchor="middle" fill="#64748b" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">https://app.example.com</text>
+  
+  <rect x="0" y="44" width="200" height="706" fill="#080f1e"/>
+  
+    
+    <text x="24" y="140" fill="#64748b" font-size="13"  font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Dashboard</text>
+    <rect x="0" y="156" width="200" height="32" fill="#818cf820"/>
+    <rect x="0" y="156" width="3" height="32" fill="#818cf8"/>
+    <text x="24" y="174" fill="#818cf8" font-size="13" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Devices</text>
+    
+    <text x="24" y="208" fill="#64748b" font-size="13"  font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Members</text>
+    
+    <text x="24" y="242" fill="#64748b" font-size="13"  font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Wallets</text>
+    
+    <text x="24" y="276" fill="#64748b" font-size="13"  font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Settings</text>
+  
+  <text x="18" y="96" fill="#818cf8" font-size="15" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">◈  Relay</text>
+
+  <!-- Content -->
+  <text x="224" y="88" fill="#f1f5f9" font-size="18" font-weight="600" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Device Management</text>
+  
+  <rect x="224" y="108" width="208" height="78" rx="8" fill="#1a2540" stroke="#2d3e58" stroke-width="1"/>
+  <text x="240" y="136" fill="#64748b" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">TOTAL DEVICES</text>
+  <text x="240" y="166" fill="#f1f5f9" font-size="26" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">1,284</text>
+  
+  <rect x="448" y="108" width="208" height="78" rx="8" fill="#1a2540" stroke="#2d3e58" stroke-width="1"/>
+  <text x="464" y="136" fill="#64748b" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">ONLINE NOW</text>
+  <text x="464" y="166" fill="#4ade80" font-size="26" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">891</text>
+  
+  <rect x="672" y="108" width="208" height="78" rx="8" fill="#1a2540" stroke="#2d3e58" stroke-width="1"/>
+  <text x="688" y="136" fill="#64748b" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">PENDING APPROVAL</text>
+  <text x="688" y="166" fill="#fbbf24" font-size="26" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">47</text>
+  
+  <rect x="896" y="108" width="208" height="78" rx="8" fill="#1a2540" stroke="#2d3e58" stroke-width="1"/>
+  <text x="912" y="136" fill="#64748b" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">OFFLINE</text>
+  <text x="912" y="166" fill="#64748b" font-size="26" font-weight="700" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">346</text>
+
+  <!-- Search + button -->
+  <rect x="224" y="208" width="340" height="34" rx="8" fill="#1a2540" stroke="#2d3e58" stroke-width="1"/>
+  <text x="244" y="230" fill="#64748b" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Search by name or ID…</text>
+  <rect x="576" y="208" width="120" height="34" rx="8" fill="#1a2540" stroke="#2d3e58" stroke-width="1"/>
+  <text x="616" y="229" text-anchor="middle" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">All Status</text>
+  
+  <rect x="1060" y="208" width="124" height="32" rx="7" fill="#818cf8"/>
+  <text x="1122" y="228" text-anchor="middle" fill="#fff" font-size="12" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">+ Add Device</text>
+
+  <!-- Table -->
+  
+  <rect x="224" y="254" width="936" height="36" fill="#1a2540"/>
+  <text x="224" y="276" fill="#64748b" font-size="12" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Device ID</text><text x="364" y="276" fill="#64748b" font-size="12" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Name</text><text x="564" y="276" fill="#64748b" font-size="12" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Location</text><text x="764" y="276" fill="#64748b" font-size="12" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Status</text><text x="924" y="276" fill="#64748b" font-size="12" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Registered</text><text x="1084" y="276" fill="#64748b" font-size="12" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Last Seen</text>
+  <line x1="224" y1="290" x2="1160" y2="290" stroke="#2d3e58" stroke-width="1"/>
+  
+  <rect x="224" y="290" width="936" height="42" fill="#0f172a"/>
+  <text x="224" y="316" fill="#64748b" font-size="12" font-family="'JetBrains Mono', monospace">RLY-0091</text><text x="364" y="316" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Terminal A</text><text x="564" y="316" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Floor 1, North Wing</text><text x="764" y="316" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"></text><text x="924" y="316" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">14 Jan 2025</text><text x="1084" y="316" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Just now</text>
+  
+  <rect x="764" y="299" width="61.2" height="20" rx="4" fill="#4ade8018"/>
+  <circle cx="774" cy="309" r="3.5" fill="#4ade80"/>
+  <text x="782" y="313" fill="#4ade80" font-size="11" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Online</text>
+  
+  <rect x="224" y="332" width="936" height="42" fill="#1a254080"/>
+  <text x="224" y="358" fill="#64748b" font-size="12" font-family="'JetBrains Mono', monospace">RLY-0082</text><text x="364" y="358" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Terminal B</text><text x="564" y="358" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Floor 2, East Wing</text><text x="764" y="358" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"></text><text x="924" y="358" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">12 Jan 2025</text><text x="1084" y="358" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">2 min ago</text>
+  
+  <rect x="764" y="341" width="61.2" height="20" rx="4" fill="#4ade8018"/>
+  <circle cx="774" cy="351" r="3.5" fill="#4ade80"/>
+  <text x="782" y="355" fill="#4ade80" font-size="11" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Online</text>
+  
+  <rect x="224" y="374" width="936" height="42" fill="#0f172a"/>
+  <text x="224" y="400" fill="#64748b" font-size="12" font-family="'JetBrains Mono', monospace">RLY-0073</text><text x="364" y="400" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Terminal C</text><text x="564" y="400" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Main Lobby</text><text x="764" y="400" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"></text><text x="924" y="400" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">10 Jan 2025</text><text x="1084" y="400" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">8 min ago</text>
+  
+  <rect x="764" y="383" width="68.4" height="20" rx="4" fill="#fbbf2418"/>
+  <circle cx="774" cy="393" r="3.5" fill="#fbbf24"/>
+  <text x="782" y="397" fill="#fbbf24" font-size="11" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Pending</text>
+  
+  <rect x="224" y="416" width="936" height="42" fill="#1a254080"/>
+  <text x="224" y="442" fill="#64748b" font-size="12" font-family="'JetBrains Mono', monospace">RLY-0065</text><text x="364" y="442" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Terminal D</text><text x="564" y="442" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Floor 3, Conference</text><text x="764" y="442" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"></text><text x="924" y="442" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">9 Jan 2025</text><text x="1084" y="442" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">2h ago</text>
+  
+  <rect x="764" y="425" width="68.4" height="20" rx="4" fill="#2d3e58"/>
+  <circle cx="774" cy="435" r="3.5" fill="#64748b"/>
+  <text x="782" y="439" fill="#64748b" font-size="11" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Offline</text>
+  
+  <rect x="224" y="458" width="936" height="42" fill="#0f172a"/>
+  <text x="224" y="484" fill="#64748b" font-size="12" font-family="'JetBrains Mono', monospace">RLY-0058</text><text x="364" y="484" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Terminal E</text><text x="564" y="484" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Cafeteria</text><text x="764" y="484" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"></text><text x="924" y="484" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">8 Jan 2025</text><text x="1084" y="484" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">4 min ago</text>
+  
+  <rect x="764" y="467" width="61.2" height="20" rx="4" fill="#4ade8018"/>
+  <circle cx="774" cy="477" r="3.5" fill="#4ade80"/>
+  <text x="782" y="481" fill="#4ade80" font-size="11" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Online</text>
+  
+  <rect x="224" y="500" width="936" height="42" fill="#1a254080"/>
+  <text x="224" y="526" fill="#64748b" font-size="12" font-family="'JetBrains Mono', monospace">RLY-0049</text><text x="364" y="526" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Terminal F</text><text x="564" y="526" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Security Desk</text><text x="764" y="526" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"></text><text x="924" y="526" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">7 Jan 2025</text><text x="1084" y="526" fill="#94a3b8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">12 min ago</text>
+  
+  <rect x="764" y="509" width="68.4" height="20" rx="4" fill="#fbbf2418"/>
+  <circle cx="774" cy="519" r="3.5" fill="#fbbf24"/>
+  <text x="782" y="523" fill="#fbbf24" font-size="11" font-weight="500" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Pending</text>
+  <line x1="224" y1="542" x2="1160" y2="542" stroke="#2d3e58" stroke-width="1"/>
+
+  <!-- Pagination -->
+  <text x="224" y="568" fill="#64748b" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Showing 6 of 1,284 devices</text>
+  <rect x="1040" y="552" width="28" height="28" rx="6" fill="#1a2540" stroke="#2d3e58" stroke-width="1"/>
+  <text x="1054" y="570" text-anchor="middle" fill="#818cf8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">1</text>
+  <rect x="1074" y="552" width="28" height="28" rx="6" fill="#1a2540" stroke="#2d3e58" stroke-width="1"/>
+  <text x="1088" y="570" text-anchor="middle" fill="#64748b" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">2</text>
+  <rect x="1108" y="552" width="28" height="28" rx="6" fill="#1a2540" stroke="#2d3e58" stroke-width="1"/>
+  <text x="1122" y="570" text-anchor="middle" fill="#64748b" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">3</text>
+  <text x="1140" y="568" fill="#64748b" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">…</text>
+</svg>

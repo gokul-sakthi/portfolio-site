@@ -2,7 +2,7 @@ import { useReveal } from "@/hooks/useReveal"
 import { cn } from "@/lib/utils"
 import { portfolioConfig } from "@/config/portfolio.config"
 
-const FEATURED = ["Node.js", "PostgreSQL", "React", "TypeScript", "Docker", "AWS"]
+const FEATURED = ["Node.js", "PostgreSQL", "Prisma ORM", "BullJS", "React", "Electron"]
 
 export function Skills() {
   const { ref, revealed } = useReveal()

@@ -6,6 +6,6 @@ export const meta: MetaConfig = {
   lastName: "D",
   title: "Fullstack Developer (Backend Focused)",
   location: "Coimbatore, Tamil Nadu",
-  github: "https://github.com/gokulsakthid",
-  linkedin: "https://linkedin.com/in/gokulsakthid",
+  github: "https://github.com/gokul-sakthi",
+  linkedin: "www.linkedin.com/in/gokul-sakthi",
 }
