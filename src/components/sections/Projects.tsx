@@ -314,46 +314,69 @@ interface ImageStripProps {
 function ImageStrip({ images, projectName }: ImageStripProps) {
   const [lightboxIdx, setLightboxIdx] = useState<number | null>(null)
 
+  const MAX_VISIBLE = 3
+  const hasMore = images.length > MAX_VISIBLE
+  const visibleImages = hasMore ? images.slice(0, MAX_VISIBLE) : images
+  const extraCount = images.length - MAX_VISIBLE
+
   return (
     <>
       <div className="flex gap-2 mb-4">
-        {images.map((src, i) => (
-          <button
-            key={i}
-            onClick={() => setLightboxIdx(i)}
-            className="group relative flex-shrink-0 overflow-hidden rounded-lg transition-all"
-            style={{
-              width: "calc(33.33% - 6px)",
-              aspectRatio: "16/10",
-              border: "1px solid var(--border)",
-              background: "var(--bg-surface)",
-            }}
-            onMouseEnter={e => {
-              e.currentTarget.style.borderColor = "var(--accent)"
-            }}
-            onMouseLeave={e => {
-              e.currentTarget.style.borderColor = "var(--border)"
-            }}
-          >
-            <img
-              src={src}
-              alt={`${projectName} screenshot ${i + 1}`}
-              className="w-full h-full object-cover object-left-top transition-transform duration-300 group-hover:scale-105"
-            />
-            {/* Hover overlay with expand hint */}
-            <div
-              className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200"
-              style={{ background: "rgba(0,0,0,0.45)" }}
+        {visibleImages.map((src, i) => {
+          const isOverlaySlot = hasMore && i === MAX_VISIBLE - 1
+          return (
+            <button
+              key={i}
+              onClick={() => setLightboxIdx(i)}
+              className="group relative flex-shrink-0 overflow-hidden rounded-lg transition-all"
+              style={{
+                width: "calc(33.33% - 6px)",
+                aspectRatio: "16/10",
+                border: "1px solid var(--border)",
+                background: "var(--bg-surface)",
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.borderColor = "var(--accent)"
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.borderColor = "var(--border)"
+              }}
             >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="15 3 21 3 21 9"/>
-                <polyline points="9 21 3 21 3 15"/>
-                <line x1="21" y1="3" x2="14" y2="10"/>
-                <line x1="3" y1="21" x2="10" y2="14"/>
-              </svg>
-            </div>
-          </button>
-        ))}
+              <img
+                src={src}
+                alt={`${projectName} screenshot ${i + 1}`}
+                className="w-full h-full object-cover object-left-top transition-transform duration-300 group-hover:scale-105"
+              />
+              {isOverlaySlot ? (
+                /* "+N more" overlay */
+                <div
+                  className="absolute inset-0 flex items-center justify-center transition-opacity duration-200"
+                  style={{ background: "rgba(0,0,0,0.55)" }}
+                >
+                  <span
+                    className="font-semibold text-white"
+                    style={{ fontSize: "1.1rem", letterSpacing: "0.01em", textShadow: "0 1px 4px rgba(0,0,0,0.5)" }}
+                  >
+                    +{extraCount}
+                  </span>
+                </div>
+              ) : (
+                /* Hover overlay with expand hint */
+                <div
+                  className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200"
+                  style={{ background: "rgba(0,0,0,0.45)" }}
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <polyline points="15 3 21 3 21 9"/>
+                    <polyline points="9 21 3 21 3 15"/>
+                    <line x1="21" y1="3" x2="14" y2="10"/>
+                    <line x1="3" y1="21" x2="10" y2="14"/>
+                  </svg>
+                </div>
+              )}
+            </button>
+          )
+        })}
       </div>
 
       {lightboxIdx !== null && (
