@@ -13,6 +13,6 @@ export const hero: HeroConfig = {
     "End-to-End Delivery",
   ],
   summaryLine:
-    "Backend engineer with 3+ years shipping production systems — modular APIs, real-time features, and Electron desktop apps. Node.js · PostgreSQL · React · Electron · AWS",
+    "Backend engineer with 3+ years shipping production systems: modular APIs, real-time features, and Electron desktop apps. Node.js · PostgreSQL · React · Electron · AWS",
   tagline: "Node.js | PostgreSQL | React | Electron | AWS",
 }

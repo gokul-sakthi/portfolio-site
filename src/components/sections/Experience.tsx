@@ -2,6 +2,18 @@ import { useReveal } from "@/hooks/useReveal"
 import { cn } from "@/lib/utils"
 import { portfolioConfig } from "@/config/portfolio.config"
 
+/** Renders "Keyword: rest" with the keyword bolded for quick scanning. */
+function BulletText({ text }: { text: string }) {
+  const idx = text.indexOf(": ")
+  if (idx === -1) return <span style={{ color: "var(--fg-muted)" }}>{text}</span>
+  return (
+    <span>
+      <span className="font-medium" style={{ color: "var(--fg)" }}>{text.slice(0, idx)}</span>
+      <span style={{ color: "var(--fg-muted)" }}>{text.slice(idx)}</span>
+    </span>
+  )
+}
+
 export function Experience() {
   const { ref, revealed } = useReveal()
   const { experience } = portfolioConfig
@@ -87,7 +99,7 @@ export function Experience() {
                           style={{ color: "var(--fg-muted)" }}
                         >
                           <span className="flex-shrink-0 mt-1.5 w-1 h-1 rounded-full" style={{ background: "var(--accent)" }} />
-                          {point.text}
+                          <BulletText text={point.text} />
                         </li>
                       ))}
                     </ul>

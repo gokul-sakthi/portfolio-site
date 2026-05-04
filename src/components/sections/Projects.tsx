@@ -43,9 +43,9 @@ function CloseIcon() {
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
-/** Renders "Keyword — rest" with the keyword bolded for quick scanning. */
+/** Renders "Keyword: rest" with the keyword bolded for quick scanning. */
 function BulletText({ text }: { text: string }) {
-  const idx = text.indexOf(" — ")
+  const idx = text.indexOf(": ")
   if (idx === -1) return <span style={{ color: "var(--fg-muted)" }}>{text}</span>
   return (
     <span>

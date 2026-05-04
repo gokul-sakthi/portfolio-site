@@ -4,7 +4,7 @@ export const about: AboutConfig = {
   isVisible: true,
 
   summary:
-    "Backend engineer with 3+ years shipping production systems — modular monolith APIs, real-time communication layers, payment integrations, and Electron desktop apps deployed in the field.",
+    "Backend engineer with 3+ years shipping production systems: modular monolith APIs, real-time communication layers, payment integrations, and Electron desktop apps deployed in the field.",
 
   highlights: [
     {
@@ -19,7 +19,7 @@ export const about: AboutConfig = {
       isVisible: true,
       icon: "◉",
       title: "Database Engineering",
-      description: "PostgreSQL as primary data store across every product — schema design, Prisma migrations, index strategy, and query optimisation under concurrent production traffic.",
+      description: "PostgreSQL as primary data store across every product: schema design, Prisma migrations, index strategy, and query optimisation under concurrent production traffic.",
     },
     {
       id: "realtime",
@@ -33,7 +33,7 @@ export const about: AboutConfig = {
       isVisible: true,
       icon: "◈",
       title: "Desktop & Kiosk Apps",
-      description: "Electron apps for Windows — kiosk state machine UX, auto-update flows, OS keychain credential storage, and OpenAPI-driven backend integration.",
+      description: "Electron apps for Windows: kiosk state machine UX, auto-update flows, OS keychain credential storage, and OpenAPI-driven backend integration.",
     },
     {
       id: "integrations",
@@ -55,7 +55,7 @@ export const about: AboutConfig = {
   paragraphs: [
     {
       isVisible: false,
-      html: `I'm a <strong>Fullstack Developer with a backend focus</strong>, specializing in building production-grade systems that handle real-world complexity — from real-time audio/video pipelines to payment integrations and cloud deployments.`,
+      html: `I'm a <strong>Fullstack Developer with a backend focus</strong>, specializing in building production-grade systems that handle real-world complexity: from real-time audio/video pipelines to payment integrations and cloud deployments.`,
     },
     {
       isVisible: false,
